@@ -1,2 +1,4 @@
 # ytdl-downloader
-A small terminalprogram that downloads youtube videos in mp4 or mp3. It uses Yt-dl.
+A small terminal based program that downloads youtube videos in mp4 or mp3. It uses Yt-dl.
+
+For more information about any bugs you may encounter, I encourage you go look up yt-dl documentation at: https://github.com/ytdl-org/youtube-dl/blob/master/README.md#readme.
