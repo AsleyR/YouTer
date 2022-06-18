@@ -10,7 +10,7 @@ There are two ways to open the program:
 
 1) Via python
 
-```python
+```bash
 # Opens file using your python version
 python -m location/of/.py/file
 ```
@@ -32,10 +32,10 @@ You absolutelty need to have youtube-dl and ffmpeg tools installed. Otherwise, t
 
 You can installed them with pip using the following commands:
 
-```python
+```bash
 pip install youtube_dl
 ```
-```python
+```bash
 pip install ffmpeg
 ```
 <br>
@@ -44,13 +44,13 @@ Don't have pip? You can download it running this command:
 <br>
 <h3>Linux & MacOs</h3>
 
-```python
+```bash
 python -m ensurepip --upgrade
 ```
 
 <h3>Windows</h3>
 
-```python
+```bash
 py -m ensurepip --upgrade
 ```
 <br>
