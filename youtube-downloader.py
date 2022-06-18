@@ -1,6 +1,7 @@
-from logging import exception
 import os
 import sys
+
+# =========== Global Variables ===========
 
 program_version = 'V. 1.6.3'
 
@@ -21,6 +22,9 @@ running = True
 options_window = False
 clr_console_action = True
 
+# =========== END - Global Variables ===========
+
+# =========== Functions ===========
 
 def clear():
     # for windows
@@ -52,6 +56,10 @@ def get_quality_input(user_input, arg_list):
     }
 
     return switcher.get(user_input, "error") # Switch dictionary
+
+# =========== End Functions ===========
+
+# =========== Main Program ===========
 
 while True:
     clear()
@@ -175,7 +183,7 @@ while True:
                         quality_selection = quality_command + '[height=' + command_video_ql + ']'
                         command = 'youtube-dl ' + quality_selection + '+bestaudio[ext=m4a]/best[ext=mp4]/best"'
                         break
-                    
+
                 break
             else:
                 error_message()
@@ -238,5 +246,7 @@ while True:
 
     video_quality = False
     clear()
+
+# =========== END - Main Program ===========
 
 # This program is so recursive like wtf, I had to make diagrams to understand the workflow. First time I do that.
