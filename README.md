@@ -28,9 +28,7 @@ open location/of/.exe./file
 
 
 ## Dependencies 📊
-You absolutelty need to have youtube-dl and ffmpeg tools installed. Otherwise, the program won't simply work.
-
-You can installed them with pip using the following commands:
+You absolutelty need to have youtube-dl and ffmpeg tools installed. Otherwise, the program won't simply work. You can installed them with pip using the following commands:
 
 ```bash
 pip install youtube_dl
