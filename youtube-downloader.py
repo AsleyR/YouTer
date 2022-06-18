@@ -3,6 +3,10 @@ import sys
 
 # =========== Global Variables ===========
 
+# Note: This is bad practice, however, I am not sure how to not use global variables in a program like this
+# I have tried to shape it into more of a more modular program that doesn't use global variables but for
+# some reason I can't get it to compile all the files and directories with pyinstaller.
+
 program_version = 'V. 1.6.3'
 
 dl_video = 'youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best"'
@@ -57,7 +61,7 @@ def get_quality_input(user_input, arg_list):
 
     return switcher.get(user_input, "error") # Switch dictionary
 
-# =========== End Functions ===========
+# =========== End - Functions ===========
 
 # =========== Main Program ===========
 
