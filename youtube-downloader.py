@@ -1,3 +1,4 @@
+from logging import exception
 import os
 import sys
 
@@ -37,6 +38,20 @@ def header():
 def error_message():
     print('\n' + error_answer + '\n')
     input('')
+
+def get_quality_input(user_input, arg_list):
+    switcher = {
+        1: arg_list[0],
+        2: arg_list[1],
+        3: arg_list[2],
+        4: arg_list[3],
+        5: arg_list[4],
+        6: arg_list[5],
+        7: arg_list[6],
+        8: arg_list[7]
+    }
+
+    return switcher.get(user_input, "error") # Switch dictionary
 
 while True:
     clear()
@@ -148,46 +163,19 @@ while True:
                         "Also, it's possible that the final output may not come as an mp4 file.\n")
                     print('1: 144p\n2: 240p\n3: 360p\n4: 480p\n5: 720p\n6: 1080p\n7: 1440p\n8: 2160p\n')
 
-                    # Disguting code, but it works...
-                    try:
-                        quality_option = int(input('Your choice: '))
-                        if quality_option == 1:
-                            quality_selection = quality_command + '[height=' + video_ql_options[0] + ']'
-                            command = 'youtube-dl ' + quality_selection + '+bestaudio[ext=m4a]/best[ext=mp4]/best"'
-                            break
-                        elif quality_option == 2:
-                            quality_selection = quality_command + '[height=' + video_ql_options[1] + ']'
-                            command = 'youtube-dl ' + quality_selection + '+bestaudio[ext=m4a]/best[ext=mp4]/best"'
-                            break
-                        elif quality_option == 3:
-                            quality_selection = quality_command + '[height=' + video_ql_options[2] + ']'
-                            command = 'youtube-dl ' + quality_selection + '+bestaudio[ext=m4a]/best[ext=mp4]/best"'
-                            break
-                        elif quality_option == 4:
-                            quality_selection = quality_command + '[height=' + video_ql_options[3] + ']'
-                            command = 'youtube-dl ' + quality_selection + '+bestaudio[ext=m4a]/best[ext=mp4]/best"'
-                            break
-                        elif quality_option == 5:
-                            quality_selection = quality_command + '[height=' + video_ql_options[4] + ']'
-                            command = 'youtube-dl ' + quality_selection + '+bestaudio[ext=m4a]/best[ext=mp4]/best"'
-                            break
-                        elif quality_option == 6:
-                            quality_selection = quality_command + '[height=' + video_ql_options[5] + ']'
-                            command = 'youtube-dl ' + quality_selection + '+bestaudio[ext=m4a]/best[ext=mp4]/best"'
-                            break
-                        elif quality_option == 7:
-                            quality_selection = quality_command + '[height=' + video_ql_options[6] + ']'
-                            command = 'youtube-dl ' + quality_selection + '+bestaudio[ext=m4a]/best[ext=mp4]/best"'
-                            break
-                        elif quality_option == 8:
-                            quality_selection = quality_command + '[height=' + video_ql_options[7] + ']'
-                            command = 'youtube-dl ' + quality_selection + '+bestaudio[ext=m4a]/best[ext=mp4]/best"'
-                            break
-                        else:
-                            error_message()
-
-                    except ValueError:
-                        error_message()
+                    quality_option = int(input('Your choice: '))
+                    
+                    # Command
+                    command_video_ql = get_quality_input(quality_option, video_ql_options)
+                    if command_video_ql == "error":
+                        error_message();
+                        print(command_video_ql)
+                        break
+                    else:
+                        quality_selection = quality_command + '[height=' + command_video_ql + ']'
+                        command = 'youtube-dl ' + quality_selection + '+bestaudio[ext=m4a]/best[ext=mp4]/best"'
+                        break
+                    
                 break
             else:
                 error_message()
