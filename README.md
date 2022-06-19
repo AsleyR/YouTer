@@ -4,7 +4,7 @@ A small terminal based gui program that downloads youtube videos in mp4 or mp3 f
 For more information about any errors you may encounter when using the program, I encourage you go look up the youtube-dl documentation <a href="https://github.com/ytdl-org/youtube-dl/" target="_blank">here</a> since this program is just superimposed over youtube-dl.
 
 
-[Developer note](#contributions--developer-note-😐) 🖋
+[Developer note](#contributions--developer-note) 🖋
 
 <br>
 
@@ -82,7 +82,7 @@ You don't have python either? You can download it <a href="https://www.python.or
 
 <br>
 
-## Contributions & Developer note 😐
+## Contributions & Developer note
 For some reason I don't understand, I cannot get PyInstaller to compile multiple .py files into a single one. So, if you ever look inside the .py file, you may find that, well, its a complete **mess**. 
 
 I don't know what to do, I'm tired, and for some reason PyInstaller just refuses to work. So, for now, I'm leaving it like that until I find a way how to compile a .py file that imports from other .py files.
