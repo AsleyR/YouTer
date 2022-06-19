@@ -4,7 +4,7 @@ A small terminal based gui program that downloads youtube videos in mp4 or mp3 f
 For more information about any errors you may encounter when using the program, I encourage you go look up the youtube-dl documentation <a href="https://github.com/ytdl-org/youtube-dl/" target="_blank">here</a> since this program is just superimposed over youtube-dl.
 
 
-=== [Developer note](#contributions--developer-note-😐) 🖋 ===
+[Developer note](#contributions--developer-note-😐) 🖋
 
 <br>
 
