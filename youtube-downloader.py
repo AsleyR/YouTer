@@ -3,9 +3,9 @@ import sys
 
 # =========== Global Variables ===========
 
-# Note: This is bad practice, however, I am not sure how to not use global variables in a program like this
+# Note: This is bad practice, however, I am not sure how to not use global variables in a program like this.
 # I have tried to shape it into more of a more modular program that doesn't use global variables but for
-# some reason I can't get it to compile all the files and directories with pyinstaller.
+# some reason I can't get pyinstaller to compile all the files and directories so...
 
 program_version = 'V. 1.6.3'
 
