@@ -7,7 +7,7 @@ import sys
 # I have tried to shape it into more of a more modular program that doesn't use global variables but for
 # some reason I can't get pyinstaller to compile all the files and directories so...
 
-program_version = 'V. 1.6.3'
+program_version = 'V. 1.0.0'
 
 dl_video = 'youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best"'
 dl_audio = 'youtube-dl -x --audio-format mp3'
