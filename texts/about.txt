@@ -1,0 +1,3 @@
+This is a small program that downloads youtube videos in mp4 or mp3 formats.
+It uses yt-dl and ffmpeg. So, if you want more details about any errors, I encourage you to go to their respectives websites for a more in-depth research.
+However, if you want more information about this tool, you are invited to read the README file on the github page of the project.
