@@ -1,4 +1,4 @@
-from winds.program_class import Program
+from winds.class_templates.program_class import Program
 
 class AboutWindow(Program):
     def __init__(self, author_name, version):
@@ -10,6 +10,7 @@ class AboutWindow(Program):
         with open('./texts/about.txt', 'r') as f:
             for line in f:
                 about_text.append(line)
+            f.close()
         return about_text
 
     def print_about(self):

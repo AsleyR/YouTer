@@ -1,4 +1,4 @@
-from winds.program_class import Program
+from winds.class_templates.program_class import Program
 
 class MainWindow(Program):
     def __init__(self, program_name, version):
@@ -6,9 +6,10 @@ class MainWindow(Program):
         self.menu_options = {
             1: "Download Video",
             2: "Download Audio",
-            3: "About",
-            4: "Options",
-            5: "Exit"
+            3: "Custom youtube-dl Command",
+            4: "About",
+            5: "Options",
+            6: "Exit"
         }
 
     def init_program(self):

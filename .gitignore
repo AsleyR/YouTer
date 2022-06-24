@@ -4,3 +4,5 @@ build
 youtube-downloader.spec
 *__pycache__
 *.DS_Store
+old
+funcs

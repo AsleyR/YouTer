@@ -1,4 +1,4 @@
-from winds.program_class import Program
+from winds.class_templates.program_class import Program
 
 class OptionsWindow(Program):
     def __init__(self):
