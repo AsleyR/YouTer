@@ -5,14 +5,15 @@ from winds.download_windows.video_winds.download_video_w import VideoDownloadWin
 from winds.download_windows.save_winds.save_w import SaveLocationWindow
 
 def main_program():
+    PROGRAM_NAME = "Youtube-dl Terminal Gui"
+    CURRENT_VERSION = "1.1.2"
     AUDIO_YOUTUBEDL_COMMAND = "-x --audio-format mp3"
 
     try:
         while True:
-            program_version = "1.1.1"
 
             # Init MainWindow
-            main_program = MainWindow("Youtube-dl Terminal Gui", program_version)
+            main_program = MainWindow(PROGRAM_NAME, CURRENT_VERSION)
             user_input = main_program.init_program()
             print(f"You chose: {user_input}")
 
@@ -30,8 +31,8 @@ def main_program():
                 custom_command_w.init_window()
 
             elif user_input == '4':
-                about_w = AboutWindow("Asley R.", program_version)
-                about_w.print_about()
+                about_w = AboutWindow(PROGRAM_NAME, "Asley R.", CURRENT_VERSION)
+                about_w.init_window()
 
             elif user_input == '6':
                 # Exit program
