@@ -9,7 +9,7 @@ def main_program():
 
     try:
         while True:
-            program_version = "1.1.0"
+            program_version = "1.1.1"
 
             # Init MainWindow
             main_program = MainWindow("Youtube-dl Terminal Gui", program_version)

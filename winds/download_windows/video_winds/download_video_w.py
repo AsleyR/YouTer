@@ -27,6 +27,7 @@ class VideoDownloadWindow(Program):
             if user_input == "1":
                 save_w = SaveLocationWindow(BEST_QUALITY_COMMAND)
                 save_w.init_window()
+                break
             
             elif user_input == "2":
                 s_quality_w = SpecificQualityOptionWindow()
@@ -34,6 +35,7 @@ class VideoDownloadWindow(Program):
 
                 save_w = SaveLocationWindow(special_quality)
                 save_w.init_window()
+                break
             
             elif user_input == "3":
                 break

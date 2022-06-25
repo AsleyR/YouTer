@@ -28,6 +28,7 @@ class SaveLocationWindow(Program):
             if user_input == "1":
                 link_w = LinkWindow(DEFAULT_FILE_PATH, self.command)
                 link_w.init_window()
+                break
             
             elif user_input == "2":
                 other_save_w = OtherSaveLocationWindow(self.command)
@@ -35,6 +36,7 @@ class SaveLocationWindow(Program):
 
                 link_w = LinkWindow(custom_file_path, self.command)
                 link_w.init_window()
+                break
 
             elif user_input == "3":
                 break
