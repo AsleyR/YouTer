@@ -1,34 +1,19 @@
 <h1>Youtube-dl Terminal Gui</h1>
 
-Previously called *ytdl-downloader*, youtube-dl terminal gui (or **ytdl-tgui** for short), is a small terminal based gui program that simplifies youtube-dl into a more user-friendly experience for downloading youtube videos and audios in mp4 or mp3 formats. 
+Youtube-dl terminal gui (or **ytdl-tgui** for short), is a small terminal based gui program that simplifies youtube-dl into a more user-friendly experience for downloading youtube videos and audios in mp4 or mp3 formats. There is also an option to enter your own custom youtube-dl commands.
 
-The program uses <a href="https://youtube-dl.org/" target="_blank">youtube-dl</a> and <a href="https://ffmpeg.org/" target="_blank">ffmpeg tools</a>, and the .exe version of the program was compiled using <a href="https://pyinstaller.org/en/stable/" target="_blank">PyInstaller</a>.
-
-For more information about any errors you may encounter when using the program, I encourage you go look up the youtube-dl documentation <a href="https://github.com/ytdl-org/youtube-dl/" target="_blank">here</a>, since this program is just superimposed over youtube-dl.
 <br>
 
 <h2> Table of contents</h2>
 
-- [How does it work](#how-does-it-work)
 - [Installation](#installation)
   - [Install from Source](#install-from-source)
+- [Usage](#usage)
 - [Dependencies](#dependencies)
-  - [Install dependencies](#install-dependencies)
+  - [Pip installation](#pip-installation)
+- [How does the program work?](#how-does-the-program-work)
 - [Contributions](#contributions)
 - [License](#license)
-
-<br>
-
-## How does it work
-**Youtube-dl terminal gui** is simply a kind of gui wrapper of the youtube-dl command tool. A good way to explain how it works would be like this:
-
-<br>
-<div align="center">
-<img src="./public/img/youtubedl_terminal_gui.svg" width=250>
-</div>
-
-<br>
-So basically, any command that works in youtube-dl works on this program too. If you check the .py file, "ytdl-terminal-gui.py", you may find that the program works by simply running youtube-dl commands in the background. As I said, this program is not meant to replace youtube-dl, is simply an extension of it.
 
 <br>
 
@@ -36,7 +21,7 @@ So basically, any command that works in youtube-dl works on this program too. If
 
 ### Install from Source
 
-1. Clone the repo into your local machine and open either the .py or .exe file to run the program.
+1. Clone the repo into your local machine and _voilá_!
 
 <br>
 
@@ -46,33 +31,32 @@ So basically, any command that works in youtube-dl works on this program too. If
 
 <br>
 
-2. Run the program by:
+---
 
-- running it  with Python:
+## Usage
 
-```bash
-# Opens file using your python version
-python3 -m location/of/.py/file
-```
-<br>
+There are several ways in which you can open the program.
 
-- opening it the .exe
+For instance, you can run the program with python, either by running the `__main__.py` directly, or by running the cloned repo itself.
 
 ```bash
-# Opens the file by executing the .exe in the terminal
-open location/of/.exe./file
+# Run __main__.py option
+python3 -m __main__.py
+```
+```bash
+# Run the cloned repo folder
+python3 ytdl-tgui
 ```
 
-<br>
+---
 
+Moreover, there is also the option of compiling the `__main__.py` into an exectubable .exe file using PyInstaller. 
+
+For that, I recommend you read first [the guide](GUIDE-BUILD-EXE.md) on how to build the .exe with PyInstaller.
 
 
 ## Dependencies
-You need to have youtube-dl and ffmpeg tools installed. Otherwise, both the .py and .exe versions of the program won't work. Also, **youtube-dl terminal gui** is made with Python 3, so be aware the program its imcompatible with older python versions, like Python 2 for example. 
-
-
-### Install dependencies
-You can install *youtube-dl* and *ffmpeg* with pip by running the following commands in the terminal:
+Youutube-dl terminal gui uses the youtube-dl and ffmpeg packages in the background. To install them, you can run the following commands:
 
 ```bash
 # Installs youtube_dl
@@ -84,29 +68,44 @@ pip install ffmpeg
 ```
 <br>
 
-Don't have pip? You can download it by running this command:
-<br>
-<h3>Linux & MacOs</h3>
+Don't have pip? Scroll down a little to see how to install it.
+
+---
+### Pip installation
+
+<h4>Linux & MacOs</h4>
 
 ```bash
 python3 -m ensurepip
 ```
 
-<h3>Windows</h3>
+<h4>Windows</h4>
 
 ```bash
 py -m ensurepip
 ```
-<br>
-
-You don't have python either? You can download it <a href="https://www.python.org/downloads/" target="_blank">here</a>.
+Please note that the installation of pip in windows can sometimes be... _complicated_. If you are having problems making pip work, I recommend you [this video guide](https://youtu.be/c_qNC1lL4qA) on how to install it.
 
 <br>
+
+You don't have python either? You can download it from the oficial website <a href="https://www.python.org/downloads/" target="_blank">here</a>.
+
+## How does the program work?
+**Youtube-dl terminal gui** is simply a kind of gui wrapper of the youtube-dl command tool. A good way to explain how it works would be like this:
+
+<br>
+<div align="center">
+<img src="./public/img/youtubedl_terminal_gui.svg" width=250>
+</div>
+
+<br>
+
+So basically, any command that works in youtube-dl works with this program too. If you check the `__main__.py` file, you may find that the youtube-dl terminal gui works by simply running youtube-dl commands in the background.
+
+That's why I decided on adding an option inside the program to enter your custom youtube-dl commands.
 
 ## Contributions
-Any type of contribution will be gladly recieved. You are welcome to fork the repo and contribute in any way you like 😁.
-
-<br>
+Any type of contributions are welcome! Please read the [contribution guidelines](CONTRIBUTING.md) first before all.
 
 ## License
 

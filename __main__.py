@@ -6,7 +6,7 @@ from winds.download_windows.save_winds.save_w import SaveLocationWindow
 
 def main_program():
     PROGRAM_NAME = "Youtube-dl Terminal Gui"
-    CURRENT_VERSION = "1.1.2"
+    CURRENT_VERSION = "1.1.3"
     AUDIO_YOUTUBEDL_COMMAND = "-x --audio-format mp3"
 
     try:
