@@ -14,7 +14,7 @@ For more information about any errors you may encounter when using the program, 
   - [Install from Source](#install-from-source)
 - [Dependencies](#dependencies)
   - [Install dependencies](#install-dependencies)
-- [Contributions & Developer note](#contributions--developer-note)
+- [Contributions](#contributions)
 - [License](#license)
 
 <br>
@@ -103,12 +103,8 @@ You don't have python either? You can download it <a href="https://www.python.or
 
 <br>
 
-## Contributions & Developer note
-For some reason I don't understand, I cannot get PyInstaller to compile multiple .py files into a single one. So, because of this, I was forced to cram everything into a single .py file. Thus, if you ever look inside the .py file, you are going to find that the code its a complete **mess**. 
-
-I don't know what to do, I'm tired, and for some reason PyInstaller just refuses to work. So, for now, I'm leaving it like that until I find a way how to compile multiple .py into a single .exe.
-
-If by chance you know how to do it, feel free to make a pull request, open a issue, create a discussion, or reach me out, either way I'll be happy for any kind of help regarding this matter. Although, if you want to contribute in other parts of the project, in any way or form, feel free to do so, any kind of help will be gladly recieved 😁.
+## Contributions
+Any type of contribution will be gladly recieved. You are welcome to fork the repo and contribute in any way you like 😁.
 
 <br>
 

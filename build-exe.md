@@ -70,4 +70,4 @@ Since we are using PyInstaller to compile _Youtube-dl Terminal Gui_, any error y
 
 You are encouraged to look on the internet for ways on how to solve any PyInstaller error, as there is a lot of info about PyInstaller online, but be aware that most problems you may encounter while compiling are because of some dependency that PyInstaller needs that's missing on your machine.
 
-However, you are also welcome to open an issue at the ytdl-tgui repo. I'll gladly look at the problem and help you out 🙃.
+However, you are also welcome to open an [issue](https://github.com/AsleyR/ytdl-tgui/issues) at the ytdl-tgui repo. I'll gladly look at the problem and help you out 🙃.

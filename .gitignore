@@ -1,8 +1,4 @@
-test.py
-dist
-build
 functions
-youtube-downloader.spec
 old
 *__pycache__
 *.DS_Store
