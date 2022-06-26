@@ -18,8 +18,6 @@ Please report _anything_ that seems wrong to you by
 [creating an issue](https://github.com/AsleyR/ytdl-tgui/issues/new) for it.
 
 If you feel like fixing it yourself, open a
-[pull request](https://help.github.com/categories/collaborating-with-issues-and-pull-requests).
-Don't worry too much about how to format your commit messages, the actual patch
-is more important.
+[pull request](https://help.github.com/categories/collaborating-with-issues-and-pull-requests). Although, please read the [guidelines](PULL_REQUEST_TEMPLATE.md) for making a pull request before all. The contents of the patch are very important to me, but so is keeping a control of the project. 
 
-Thank you for contributing! 🎉
+Thank you in advance for following the guideliens and for contributing! 🎉
