@@ -99,12 +99,12 @@ You don't have python either? You can download it from the oficial website <a hr
 
 <br>
 <div align="center">
-<img src="./public/img/youtubedl_terminal_gui.svg" width=250>
+<img src="./public/img/YouTer%20Explained.svg" width=250>
 </div>
 
 <br>
 
-So basically, any command that works in youtube-dl works with this program too. If you check the `__main__.py` file, you may find that the youtube-dl terminal gui works by simply running youtube-dl commands in the background.
+So basically, any command that works in youtube-dl works with this program too. If you check the `__main__.py` file, you may find that **YouTer** works by simply running youtube-dl commands in the background.
 
 That's why I decided on adding an option inside the program to enter your custom youtube-dl commands.
 
