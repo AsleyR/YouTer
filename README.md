@@ -1,6 +1,10 @@
-<h1>Youtube-dl Terminal Gui</h1>
+<div align="center">
+  <img src="./public/img/YouTer%20Logo%20500-200.png" width="450">
+</div>
 
-Youtube-dl terminal gui (or **ytdl-tgui** for short), is a small terminal based gui program that simplifies youtube-dl into a more user-friendly experience for downloading youtube videos and audios in mp4 or mp3 formats. There is also an option to enter your own custom youtube-dl commands.
+<br>
+
+YouTer is a small terminal based gui program that simplifies youtube-dl into a more user-friendly experience for downloading youtube videos and audios in mp4 or mp3 formats. There is also an option to enter your own custom youtube-dl commands.
 
 <br>
 
@@ -91,7 +95,7 @@ Please note that the installation of pip in windows can sometimes be... _complic
 You don't have python either? You can download it from the oficial website <a href="https://www.python.org/downloads/" target="_blank">here</a>.
 
 ## How does the program work?
-**Youtube-dl terminal gui** is simply a kind of gui wrapper of the youtube-dl command tool. A good way to explain how it works would be like this:
+**YouTer** is simply a kind of gui wrapper of the youtube-dl command tool. A good way to explain how it works would be like this:
 
 <br>
 <div align="center">
