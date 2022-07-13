@@ -15,7 +15,7 @@ All kinds of contributions are welcome!
 - Want to translate the readme or the program? Go for it.
 
 Please report _anything_ that seems wrong to you by
-[creating an issue](https://github.com/AsleyR/ytdl-tgui/issues/new) for it.
+[creating an issue](https://github.com/AsleyR/YouTer/issues/new) for it.
 
 If you feel like fixing it yourself, open a
 [pull request](https://help.github.com/categories/collaborating-with-issues-and-pull-requests). Although, please read the [guidelines](PULL_REQUEST_TEMPLATE.md) for making a pull request before all. The contents of the patch are very important to me, but so is keeping a control of the project. 
