@@ -4,7 +4,7 @@
 
 <br>
 
-YouTer is a small terminal based gui program that simplifies youtube-dl into a more user-friendly experience for downloading youtube videos and audios in mp4 or mp3 formats. There is also an option to enter your own custom youtube-dl commands.
+YouTer is a small terminal-based gui program that simplifies youtube-dl into a more user-friendly experience for downloading youtube videos and audios in mp4 or mp3 formats. There is also an option to enter your own custom youtube-dl commands.
 
 <br>
 
