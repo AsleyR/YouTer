@@ -60,7 +60,7 @@ For that, I recommend you read first [the guide](GUIDE-BUILD-EXE.md) on how to b
 
 
 ## Dependencies
-Youutube-dl terminal gui uses the youtube-dl and ffmpeg packages in the background. To install them, you can run the following commands:
+YouTer uses the youtube-dl and ffmpeg packages in the background. To install them, you can run the following commands:
 
 ```bash
 # Installs youtube_dl
@@ -88,7 +88,7 @@ python3 -m ensurepip
 ```bash
 py -m ensurepip
 ```
-Please note that the installation of pip in windows can sometimes be... _complicated_. If you are having problems making pip work, I recommend you [this video guide](https://youtu.be/c_qNC1lL4qA) on how to install it.
+Please note that the installation of pip in windows can sometimes be... _complicated_. If you are having problems making pip work, I recommend you this [video guide](https://youtu.be/c_qNC1lL4qA) on how to install it.
 
 <br>
 
@@ -106,7 +106,7 @@ You don't have python either? You can download it from the oficial website <a hr
 
 So basically, any command that works in youtube-dl works with this program too. If you check the `__main__.py` file, you may find that **YouTer** works by simply running youtube-dl commands in the background.
 
-That's why I decided on adding an option inside the program to enter your custom youtube-dl commands.
+That's why there's an option inside the program to enter your custom youtube-dl commands, for those who want more control over the output command.
 
 ## Contributions
 Any type of contributions are welcome! Please read the [contribution guidelines](CONTRIBUTING.md) first before all.
