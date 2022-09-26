@@ -1,4 +1,6 @@
-functions
-old
 *__pycache__
 *.DS_Store
+*pyo
+*dist
+*build
+*YouTer.egg-info
