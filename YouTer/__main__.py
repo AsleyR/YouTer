@@ -1,8 +1,9 @@
-from winds.main_w import MainWindow
-from winds.about_w import AboutWindow
-from winds.custom_command import CustomYoutubeDlCommandWindow
-from winds.download_windows.video_winds.download_video_w import VideoDownloadWindow
-from winds.download_windows.save_winds.save_w import SaveLocationWindow
+from .winds.main_w import MainWindow
+from .winds.about_w import AboutWindow
+from .winds.custom_command import CustomYoutubeDlCommandWindow
+from .winds.download_windows.video_winds.download_video_w import VideoDownloadWindow
+from .winds.download_windows.save_winds.save_w import SaveLocationWindow
+from .winds.options_w import OptionsWindow
 
 def main_program():
     PROGRAM_NAME = "YouTer"
@@ -33,6 +34,10 @@ def main_program():
             elif user_input == '4':
                 about_w = AboutWindow(PROGRAM_NAME, "Asley R.", CURRENT_VERSION)
                 about_w.init_window()
+            
+            elif user_input == '5':
+                options_w = OptionsWindow()
+                options_w.init_window()
 
             elif user_input == '6':
                 # Exit program

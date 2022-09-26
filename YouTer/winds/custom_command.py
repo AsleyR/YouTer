@@ -1,5 +1,5 @@
-from winds.class_templates.program_class import Program
-from winds.download_windows.youtubedl_w import YoutubeDlWindow
+from .class_templates.program_class import Program
+from .download_windows.youtubedl_w import YoutubeDlWindow
 
 class CustomYoutubeDlCommandWindow(Program):
     def __init__(self):

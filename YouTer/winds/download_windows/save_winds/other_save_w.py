@@ -1,6 +1,5 @@
-from yaml import compose_all
-from winds.class_templates.program_class import Program
-from winds.download_windows.link_w import LinkWindow
+from YouTer.winds.class_templates.program_class import Program
+from YouTer.winds.download_windows.link_w import LinkWindow
 
 class OtherSaveLocationWindow(Program):
     def __init__(self, command):

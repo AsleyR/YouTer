@@ -1,4 +1,4 @@
-from winds.class_templates.program_class import Program
+from .class_templates.program_class import Program
 
 class MainWindow(Program):
     def __init__(self, program_name, version):

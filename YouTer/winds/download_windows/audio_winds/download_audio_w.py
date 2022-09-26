@@ -1,4 +1,4 @@
-from winds.class_templates.program_class import Program
+from YouTer.winds.class_templates.program_class import Program
 
 class AudioDownloadWindow(Program):
     def __init__(self):

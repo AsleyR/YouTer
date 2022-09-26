@@ -1,4 +1,4 @@
-from winds.class_templates.program_class import Program
+from YouTer.winds.class_templates.program_class import Program
 
 class OptionsWindow(Program):
     def __init__(self):
@@ -14,8 +14,10 @@ class OptionsWindow(Program):
             print(f"{key}: {menu.get(key)}")
         print('\n')
 
-    def options_window(self):
-        print("Options")
+    def init_window(self):
+        self.clear()
+
+        print("Options (Not working at the moment)")
         self.line_breaker()
         self.print_options()
         self.user_input()

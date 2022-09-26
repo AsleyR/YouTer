@@ -1,5 +1,5 @@
 import os
-from winds.class_templates.program_class import Program
+from YouTer.winds.class_templates.program_class import Program
 
 class YoutubeDlWindow(Program):
     def __init__(self, command):

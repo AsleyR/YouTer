@@ -1,27 +1,27 @@
 import os
-from winds.class_templates.program_class import Program
+from .class_templates.program_class import Program
 
 class AboutWindow(Program):
     def __init__(self, program_name, author_name, version):
-        self.about_file_path = os.path.join(os.getcwd())
+        self.about_file_path = os.path.join(os.getcwd(), 'YouTer', 'texts', 'about.txt')
         self.author_name = author_name
         super().__init__(program_name, version)
 
     # Checks to see if the program is being run as package or script
     # in order to properly locate the .txt file about.txt
 
-    def check_file_path(self):
-        # check if run as a package
-        if os.path.exists(os.path.join(os.getcwd(), 'ytdl-tgui', 'texts', 'about.txt')):
-            self.about_file_path = os.path.join(os.getcwd(), 'ytdl-tgui', 'texts', 'about.txt')
+    # def check_file_path(self):
+    #     # check if run as a package
+    #     if os.path.exists(os.path.join(os.getcwd(), 'texts', 'about.txt')):
+    #         self.about_file_path = os.path.join(os.getcwd(), 'ytdl-tgui', 'texts', 'about.txt')
 
-        # check if run as a script
-        elif os.path.exists(os.path.join(os.getcwd(), 'texts', 'about.txt')):
-            self.about_file_path = os.path.join(os.getcwd(), 'texts', 'about.txt')
+    #     # check if run as a script
+    #     elif os.path.exists(os.path.join(os.getcwd(), 'texts', 'about.txt')):
+    #         self.about_file_path = os.path.join(os.getcwd(), 'texts', 'about.txt')
 
-        else:
-            print('Error locating file')
-            input('\nPress any key to restart the process...')
+    #     else:
+    #         print('Error locating file')
+    #         input('\nPress any key to restart the process...')
 
     def read_about_file(self):
         about_text = []
@@ -33,7 +33,9 @@ class AboutWindow(Program):
 
     # Init window
     def init_window(self):
-        self.check_file_path()
+        # print('start')
+        # self.check_file_path()
+        # print('end')
 
         self.clear()
 

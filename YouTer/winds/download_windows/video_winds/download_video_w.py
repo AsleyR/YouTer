@@ -1,7 +1,7 @@
 from numpy import save
-from winds.class_templates.program_class import Program
-from winds.download_windows.save_winds.save_w import SaveLocationWindow
-from winds.download_windows.video_winds.specific_quality_w import SpecificQualityOptionWindow
+from YouTer.winds.class_templates.program_class import Program
+from YouTer.winds.download_windows.save_winds.save_w import SaveLocationWindow
+from YouTer.winds.download_windows.video_winds.specific_quality_w import SpecificQualityOptionWindow
 
 class VideoDownloadWindow(Program):
     def __init__(self):

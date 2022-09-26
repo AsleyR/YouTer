@@ -1,5 +1,5 @@
-from winds.class_templates.program_class import Program
-from winds.download_windows.youtubedl_w import YoutubeDlWindow
+from YouTer.winds.class_templates.program_class import Program
+from .youtubedl_w import YoutubeDlWindow
 
 class LinkWindow(Program):
     def __init__(self, file_path, command):

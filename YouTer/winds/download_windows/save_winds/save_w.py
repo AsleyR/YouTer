@@ -1,7 +1,7 @@
 from os import link
-from winds.class_templates.program_class import Program
-from winds.download_windows.save_winds.other_save_w import OtherSaveLocationWindow
-from winds.download_windows.link_w import LinkWindow
+from YouTer.winds.class_templates.program_class import Program
+from YouTer.winds.download_windows.save_winds.other_save_w import OtherSaveLocationWindow
+from YouTer.winds.download_windows.link_w import LinkWindow
 
 class SaveLocationWindow(Program):
     def __init__(self, command):
