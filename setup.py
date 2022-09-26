@@ -1,3 +1,4 @@
+from importlib.metadata import entry_points
 from setuptools import setup, find_packages
 import codecs
 import os
@@ -7,7 +8,7 @@ here = os.path.abspath(os.path.dirname(__file__))
 with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
     long_description = "\n" + fh.read()
 
-VERSION = '1.0.1'
+VERSION = '1.0.3'
 DESCRIPTION = 'Terminal based gui program that downloads youtube videos in mp4 or mp3 formats.'
 LONG_DESCRIPTION = ''
 
@@ -30,5 +31,10 @@ setup(
         "Operating System :: Unix",
         "Operating System :: MacOS :: MacOS X",
         "Operating System :: Microsoft :: Windows",
-    ]
+    ],
+    entry_points={
+        'console_scripts': [
+            'YouTer = YouTer.__main__:main_program',
+        ],
+    },
 )
