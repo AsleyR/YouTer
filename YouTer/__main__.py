@@ -7,7 +7,7 @@ from .winds.options_w import OptionsWindow
 
 def main_program():
     PROGRAM_NAME = "YouTer"
-    CURRENT_VERSION = "1.0.1"
+    CURRENT_VERSION = "1.0.6"
     AUDIO_YOUTUBEDL_COMMAND = "-x --audio-format mp3"
 
     try:
