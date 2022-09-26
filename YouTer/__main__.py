@@ -6,7 +6,7 @@ from winds.download_windows.save_winds.save_w import SaveLocationWindow
 
 def main_program():
     PROGRAM_NAME = "YouTer"
-    CURRENT_VERSION = "1.1.3"
+    CURRENT_VERSION = "1.0.1"
     AUDIO_YOUTUBEDL_COMMAND = "-x --audio-format mp3"
 
     try:
