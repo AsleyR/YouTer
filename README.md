@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./public/img/YouTer%20Logo%20500-200.png" width="450">
+  <img src="https://raw.githubusercontent.com/AsleyR/YouTer/main/public/img/YouTer%20Logo%20500-200.png" width="450">
 </div>
 
 <br>
@@ -30,7 +30,7 @@ YouTer is a small terminal-based gui program that simplifies youtube-dl into a m
 <br>
 
 <div align="center">
-<img src="./public/img/clone_repo_guide.gif" width="500">
+<img src="https://raw.githubusercontent.com/AsleyR/YouTer/main/public/img/clone_repo_guide.gif" width="500">
 </div>
 
 <br>
@@ -99,7 +99,7 @@ You don't have python either? You can download it from the oficial website <a hr
 
 <br>
 <div align="center">
-<img src="./public/img/YouTer%20Explained.svg" width=250>
+<img src="https://raw.githubusercontent.com/AsleyR/YouTer/main/public/img/YouTer%20Explained.svg" width=250>
 </div>
 
 <br>
