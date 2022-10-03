@@ -8,7 +8,7 @@ here = os.path.abspath(os.path.dirname(__file__))
 with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
     long_description = "\n" + fh.read()
 
-VERSION = '1.0.6'
+VERSION = '1.0.7'
 DESCRIPTION = 'Terminal based gui program that downloads youtube videos in mp4 or mp3 formats.'
 LONG_DESCRIPTION = ''
 
@@ -22,7 +22,7 @@ setup(
     long_description_content_type="text/markdown",
     long_description=long_description,
     packages=find_packages(),
-    install_requires=['youtube_dl', 'ffmpeg'],
+    install_requires=['youtube_dl', 'ffmpeg', 'numpy'],
     keywords=['python', 'video', 'audio', 'download', 'terminal'],
     classifiers=[
         "Development Status :: 1 - Planning",
