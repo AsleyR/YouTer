@@ -10,10 +10,15 @@ YouTer is a small terminal-based gui program that simplifies youtube-dl into a m
 
 <h2> Table of contents</h2>
 
+- [Features](#features)
 - [Installation](#installation)
-  - [Install from Source](#install-from-source)
+  - [Using pip](#using-pip)
+  - [From Source](#from-source)
 - [Usage](#usage)
-- [Dependencies](#dependencies)
+  - [Pip](#pip)
+  - [Manually](#manually)
+- [Other](#other)
+  - [Dependencies](#dependencies)
   - [Pip installation](#pip-installation)
 - [How does the program work?](#how-does-the-program-work)
 - [Contributions](#contributions)
@@ -21,9 +26,25 @@ YouTer is a small terminal-based gui program that simplifies youtube-dl into a m
 
 <br>
 
+## Features
+
+With YouTer, you can download any YouTube video in any quality (only if the video has the selected quality available), or in the best possible quality.
+
+Further, YouTer also allows you to take any YouTube video and download only the audio from it.
+
 ## Installation
 
-### Install from Source
+### Using pip
+
+YouTer can be installed using pip, along with all the program dependencies it needs to work. 
+
+To download YouTer with pip using the following command:
+
+```python
+pip install YouTer
+```
+
+### From Source
 
 1. Clone the repo into your local machine and _voilá_!
 
@@ -41,25 +62,23 @@ YouTer is a small terminal-based gui program that simplifies youtube-dl into a m
 
 There are several ways in which you can open the program.
 
-For instance, you can run the program with python, either by running the `__main__.py` directly, or by running the cloned repo itself.
+### Pip
 
-```bash
-# Run __main__.py option
-python3 -m __main__.py
-```
-```bash
-# Run the cloned repo folder
-python3 ytdl-tgui
-```
+If YouTer was installed with pip, you can run the program in the terminal by simple writing `youter` in the terminal. The program will then be executed.
 
 ---
 
-Moreover, there is also the option of compiling the `__main__.py` into an exectubable .exe file using PyInstaller. 
+### Manually
 
-For that, I recommend you read first [the guide](GUIDE-BUILD-EXE.md) on how to build the .exe with PyInstaller.
+Another way you can run the program is by opening either the module folder installed by pip, or the cloned folder from the repo. Then, once inside the folder, simply run the python file as a module with the following command:
 
+```python
+python3 -m YouTer
+```
 
-## Dependencies
+## Other
+
+### Dependencies
 YouTer uses the youtube-dl and ffmpeg packages in the background. To install them, you can run the following commands:
 
 ```bash
