@@ -9,7 +9,7 @@ class SaveLocationWindow(Program):
         self.menu_options = {
             1: "Save on Desktop (Default)",
             2: "Enter custom save location",
-            3: "Return to previous window"
+            3: "Return to main window"
         }
 
     def init_window(self):
