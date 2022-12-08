@@ -4,7 +4,7 @@
 
 <br>
 
-YouTer is a small terminal-based gui program that simplifies youtube-dl into a more user-friendly experience for downloading youtube videos and audios in mp4 or mp3 formats. There is also an option to enter your own custom youtube-dl commands.
+YouTer is a terminal-based gui program that simplifies youtube-dl into a more user-friendly experience for downloading youtube videos and audios in mp4 or mp3 formats. There is also an option to enter your own custom youtube-dl commands.
 
 <br>
 
@@ -20,7 +20,8 @@ YouTer is a small terminal-based gui program that simplifies youtube-dl into a m
 - [Other](#other)
   - [Dependencies](#dependencies)
   - [Pip installation](#pip-installation)
-- [How does the program work?](#how-does-the-program-work)
+- [How does YouTer work?](#how-does-youter-work)
+  - [Terminal Wrapper](#terminal-wrapper)
 - [Contributions](#contributions)
 - [License](#license)
 
@@ -70,7 +71,7 @@ If YouTer was installed with pip, you can run the program in the terminal by sim
 
 ### Manually
 
-Another way you can run the program is by opening either the module folder installed by pip, or the cloned folder from the repo. Then, once inside the folder, simply run the python file as a module with the following command:
+Another way you can run the program is by opening either the module folder installed by pip, or the cloned folder from the repo. Then, once inside the folder, simply run the `YouTer` directory as a module with the following command:
 
 ```python
 python3 -m YouTer
@@ -113,7 +114,10 @@ Please note that the installation of pip in windows can sometimes be... _complic
 
 You don't have python either? You can download it from the oficial website <a href="https://www.python.org/downloads/" target="_blank">here</a>.
 
-## How does the program work?
+## How does YouTer work?
+
+### Terminal Wrapper
+
 **YouTer** is simply a kind of gui wrapper of the youtube-dl command tool. A good way to explain how it works would be like this:
 
 <br>
