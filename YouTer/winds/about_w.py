@@ -1,9 +1,10 @@
 import os
+from pathlib import Path
 from .class_templates.program_class import Program
 
 class AboutWindow(Program):
     def __init__(self, program_name, author_name, version):
-        self.about_file_path = os.path.join(os.getcwd(), 'YouTer', 'texts', 'about.txt')
+        self.about_file_path = ''
         self.author_name = author_name
         super().__init__(program_name, version)
 
@@ -23,7 +24,20 @@ class AboutWindow(Program):
     #         print('Error locating file')
     #         input('\nPress any key to restart the process...')
 
+    def get_text_file_path(self):
+        # Get current directory
+        cwd = Path.cwd() # Relative to root folder
+
+        # Text file relative path
+        relative_text_file_path = "./YouTer/texts/about.txt"
+
+        # Resolve path
+        text_file_path = (cwd / relative_text_file_path).resolve()
+
+        self.about_file_path = text_file_path
+
     def read_about_file(self):
+        self.get_text_file_path()
         about_text = []
         with open(self.about_file_path, 'r') as f:
             for line in f:
