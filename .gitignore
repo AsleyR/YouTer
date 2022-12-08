@@ -1,6 +1,6 @@
 *__pycache__
 *.DS_Store
 *pyo
-*dist
-*build
+*dist/
+*build/
 *YouTer.egg-info
