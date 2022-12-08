@@ -15,9 +15,22 @@ class OptionsWindow(Program):
         print('\n')
 
     def init_window(self):
-        self.clear()
+        while True:
+            self.clear() # Clear console
 
-        print("Options (Not working at the moment)")
-        self.line_breaker()
-        self.print_options()
-        self.user_input()
+            print("Options (Not working at the moment)")
+            self.line_breaker()
+            self.print_options()
+
+            # Ask for User Input
+            user_input = self.user_input()
+
+            # if 1, change settings
+            if (user_input == '1'):
+                break
+            # if 2, return to main menu
+            elif (user_input == '2'):
+                break
+            # in case of another input
+            else:
+                pass
