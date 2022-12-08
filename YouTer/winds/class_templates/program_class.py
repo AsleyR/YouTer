@@ -24,6 +24,7 @@ class Program:
             print(f"{key}: {dictionary.get(key)}")
         print("\n")
 
+    # Clear console/terminal
     def clear(self):
         # Windows
         if os.name == "nt":
@@ -33,6 +34,7 @@ class Program:
         else:
             _ = os.system('clear')
     
+    # Exit/ close terminal
     def exit(self):
         self.clear()
         sys.exit()
